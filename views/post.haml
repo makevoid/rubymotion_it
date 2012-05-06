@@ -1,0 +1,10 @@
+%nav.inpage
+  - link_to "back to posts", "/", class: "btn"
+
+.post
+  %h1
+    - link_to @post.title, "/posts/#{@post.title_url}"
+  .contents
+    .date= @post.date
+    .text
+      = @post.text

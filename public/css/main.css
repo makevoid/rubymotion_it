@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style-type: none; }
+
+body {
+  background: #d9d9d9;
+  font-family: Georgia, Verdana, Arial;
+  color: #111111; }
+
+a {
+  color: #dd0000; }
+
+a:hover {
+  color: #ff1111; }
+
+a.btn {
+  border-radius: 8px;
+  background: #dd0000;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 3px 10px;
+  border: 1px solid #888888;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #aaaaaa;
+  border-top: 1px solid #cccccc;
+  box-shadow: 1px 1px 3px #999999; }
+
+a.btn:hover {
+  background: white;
+  color: #dd0000;
+  border: 1px solid #cccccc;
+  border-top: 1px solid #888888;
+  box-shadow: 0px 0px 4px white; }
+
+header h1 {
+  font-size: 1.4em;
+  text-shadow: 1px 1px 1px white, 1px 1px 4px #222222; }
+
+h1 {
+  margin: 0 0 10px 0; }
+  h1 span {
+    font-size: 0.6em;
+    display: block; }
+
+h2 {
+  margin: 10px 0 8px;
+  font-size: 1.3em; }
+
+.content {
+  margin: 20px 0 0 0; }
+
+.post {
+  margin: 0 0 10px 0;
+  background: white;
+  background: linear-gradient(top, white, #dddddd);
+  background: -o-linear-gradient(top, white, #dddddd);
+  background: -moz-linear-gradient(top, white, #dddddd);
+  background: -webkit-linear-gradient(top, white, #dddddd);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1, white), color-stop(0, #dddddd));
+  background: -ms-linear-gradient(top, white, #dddddd);
+  padding: 5px 1.5% 0px;
+  border-radius: 12px;
+  border: 1px solid #888888;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #aaaaaa;
+  border-top: 1px solid #cccccc;
+  box-shadow: 1px 1px 3px #999999; }
+
+.posts .post {
+  cursor: pointer; }
+  .posts .post:hover {
+    background: #bbbbbb;
+    background: linear-gradient(top, #bbbbbb, #eeeeee);
+    background: -o-linear-gradient(top, #bbbbbb, #eeeeee);
+    background: -moz-linear-gradient(top, #bbbbbb, #eeeeee);
+    background: -webkit-linear-gradient(top, #bbbbbb, #eeeeee);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(1, #bbbbbb), color-stop(0, #eeeeee));
+    background: -ms-linear-gradient(top, #bbbbbb, #eeeeee);
+    border: 1px solid #cccccc;
+    border-top: 1px solid #888888;
+    box-shadow: 0px 0px 4px white; }
+
+label {
+  font-size: 0.85em;
+  font-weight: bold;
+  margin: 0 0 4px;
+  display: block; }
+
+input, textarea {
+  font-size: 1.1em;
+  display: block;
+  margin: 0 0 15px;
+  padding: 2px 5px;
+  width: 30%; }
+
+textarea {
+  height: 400px; }
+
+.submit {
+  width: 30%;
+  clear: right; }
+
+input, textarea, .submit {
+  width: 70%; }
+
+input[type='submit'] {
+  margin: 10px 0 0 0;
+  font-size: 1.2em;
+  width: auto;
+  float: right;
+  display: inline-block; }
+
+.clear {
+  clear: both; }
+
+.right {
+  float: right; }
+
+#container {
+  width: 92%;
+  margin: 20px auto; }
+
+code {
+  background: white;
+  display: block;
+  border-radius: 6px;
+  font-size: 1.18em;
+  margin: 8px 0 15px 0;
+  padding: 5px 0 5px 1%; }
+
+hr {
+  margin: 40px 0 30px;
+  height: 0px;
+  border-bottom: 2px dashed #888888; }
+
+ul {
+  margin: 0 0 10px 0; }
+
+.gist-data, .gist-syntax, .gist-file, .gist {
+  border-radius: 6px; }
+
+.gist .gist-data {
+  padding: 5px 0 1px 0.5%; }
+
+.gist-meta {
+  display: none; }
+
+.post .date {
+  font-weight: bold;
+  margin: 0 0 10px 0; }
+.post .contents {
+  margin: 0 0 15px 0; }
+
+.post.closed .contents {
+  display: none; }
+
+.post.open .contents {
+  display: block;
+  cursor: auto; }
+
+.posts .post.open:hover {
+  background: white;
+  background: linear-gradient(top, white, #dddddd);
+  background: -o-linear-gradient(top, white, #dddddd);
+  background: -moz-linear-gradient(top, white, #dddddd);
+  background: -webkit-linear-gradient(top, white, #dddddd);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(1, white), color-stop(0, #dddddd));
+  background: -ms-linear-gradient(top, white, #dddddd);
+  padding: 5px 1.5% 0px;
+  border-radius: 12px;
+  border: 1px solid #888888;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #aaaaaa;
+  border-top: 1px solid #cccccc;
+  box-shadow: 1px 1px 3px #999999; }
+
+nav.inpage {
+  margin: 0 0 15px 0; }

@@ -1,0 +1,10 @@
+.posts
+  - @posts.each_with_index do |post, idx|
+    .post{ class: "#{idx == 0 ? "open" : "closed"}"  }
+      %h1
+        - link_to post.title, "/posts/#{post.title_url}"
+      .contents
+        .date= post.date
+        .text
+          = preserve do
+            = post.text

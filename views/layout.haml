@@ -1,0 +1,16 @@
+%html
+  %head
+    %title makevoid's RubyMotion log
+    %link{ href: "/css/main.css", rel: "stylesheet" }
+  %body
+    #container
+      %header
+        %h1
+          %span
+            - link_to "makevoid", "http://makevoid.com"
+            's
+          - link_to "RubyMotion log", "/"
+      %nav
+      %section.content= yield
+  %script{ src: "/js/vendor/zepto.js", type: "text/javascript" }
+  %script{ type: "text/javascript", src: "/js/app.js" }

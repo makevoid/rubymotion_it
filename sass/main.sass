@@ -1,0 +1,197 @@
+$main: #D00
+$bg: #D9D9D9
+$fg: #FFF
+$text: #111
+
+
+// $main: #D00
+// $bg: #333
+// $fg: #111
+// $text: #EEE
+
+=gradient($start, $end)
+  background: $start
+  background: linear-gradient(top, $start, $end)
+  background: -o-linear-gradient(top, $start, $end)
+  background: -moz-linear-gradient(top, $start, $end)
+  background: -webkit-linear-gradient(top, $start, $end)
+  background: -webkit-gradient(linear, left bottom,	left top, color-stop(1, $start), color-stop(0, $end))
+  background: -ms-linear-gradient(top, $start, $end)
+
+=emboss
+  border:       1px solid $fg - #777
+  border-left:  1px solid $fg - #666
+  border-right: 1px solid $fg - #555
+  border-top:   1px solid $fg - #333
+  box-shadow: 1px 1px 3px #999
+
+=emboss_hover
+  border:       1px solid $fg - #333
+  border-top:   1px solid $fg - #777
+  box-shadow: 0px 0px 4px #FFF
+
+=box
+  +gradient($fg, $fg - #222)
+  padding: 5px 1.5% 0px
+  border-radius: 12px
+  +emboss
+  
+=box_hover  
+  +gradient($fg - #444, $fg - #111)
+  +emboss_hover
+
+// reset
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  border: 0
+
+a
+  text-decoration: none
+  
+ul
+  list-style-type: none
+  
+// style
+
+body
+  background: $bg
+  font-family: Georgia, Verdana, Arial
+  color: $text
+
+a
+  color: $main
+a:hover
+  color: $main + #211
+a.btn
+  border-radius: 8px
+  background: $main
+  color: #fff
+  font-weight: bold
+  font-size: 0.9em
+  padding: 3px 10px
+  +emboss
+a.btn:hover  
+  background: #fff
+  color: $main
+  +emboss_hover
+  
+
+header h1
+  font-size: 1.4em
+  text-shadow:  1px 1px 1px #FFF, 1px 1px 4px #222
+
+h1
+  margin: 0 0 10px 0
+  span
+    font-size: 0.6em
+    display: block
+    
+h2
+  margin: 10px 0 8px
+  font-size: 1.3em
+
+.content
+  margin: 20px 0 0 0
+
+.post
+  margin: 0 0 10px 0
+  +box
+  
+.posts .post
+  cursor: pointer
+  &:hover
+    +box_hover
+    
+
+label
+  font-size: 0.85em
+  font-weight: bold
+  margin: 0 0 4px 
+  display: block
+
+input, textarea
+  font-size: 1.1em
+  display: block
+  margin: 0 0 15px
+  padding: 2px 5px
+  width: 30%
+  
+textarea
+  height: 400px
+  
+.submit
+  width: 30%
+  clear: right
+  
+
+input, textarea, .submit
+  width: 70%
+  
+input[type='submit']
+  margin: 10px 0 0 0
+  font-size: 1.2em
+  width: auto
+  float: right
+  display: inline-block
+  
+.clear 
+  clear: both
+  
+.right
+  float: right
+  
+#container
+  width: 92%
+  margin: 20px auto
+
+code
+  background: #FFF
+  display: block
+  border-radius: 6px
+  font-size: 1.18em
+  margin: 8px 0 15px 0
+  padding: 5px 0 5px 1%
+  
+  
+hr
+  margin: 40px 0 30px
+  height: 0px
+  border-bottom: 2px dashed #888
+  
+
+ul
+  margin: 0 0 10px 0
+  
+.gist-data, .gist-syntax, .gist-file, .gist
+  border-radius: 6px
+  
+.gist .gist-data
+  padding: 5px 0 1px 0.5%
+
+.gist-meta
+  display: none
+
+.post 
+  .date
+    font-weight: bold
+    margin: 0 0 10px 0 
+  .contents  
+    margin: 0 0 15px 0
+
+.post.closed
+  .contents
+    display: none
+.post.open 
+  .contents
+    display: block
+    cursor: auto
+
+.posts .post.open
+  &:hover
+    +box
+
+nav.inpage
+  margin: 0 0 15px 0
