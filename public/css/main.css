@@ -67,7 +67,7 @@ h2 {
   background: -webkit-linear-gradient(top, white, #dddddd);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(1, white), color-stop(0, #dddddd));
   background: -ms-linear-gradient(top, white, #dddddd);
-  padding: 5px 1.5% 0px;
+  padding: 10px 1.5% 0px;
   border-radius: 12px;
   border: 1px solid #888888;
   border-left: 1px solid #999999;
@@ -131,11 +131,13 @@ input[type='submit'] {
 
 code {
   background: white;
-  display: block;
+  display: inline-block;
   border-radius: 6px;
   font-size: 1.18em;
   margin: 8px 0 15px 0;
-  padding: 5px 0 5px 1%; }
+  padding: 5px 0 5px 1%;
+  width: 100%;
+  overflow: auto; }
 
 hr {
   margin: 40px 0 30px;
@@ -154,18 +156,23 @@ ul {
 .gist-meta {
   display: none; }
 
+.post.closed .contents {
+  display: none; }
+.post.closed .close {
+  display: none; }
+.post.open .contents {
+  display: block;
+  cursor: auto; }
 .post .date {
   font-weight: bold;
   margin: 0 0 10px 0; }
 .post .contents {
   margin: 0 0 15px 0; }
-
-.post.closed .contents {
-  display: none; }
-
-.post.open .contents {
-  display: block;
-  cursor: auto; }
+.post .close {
+  float: right;
+  font-size: 1.8em;
+  position: relative;
+  top: -5px; }
 
 .posts .post.open:hover {
   background: white;
@@ -175,7 +182,7 @@ ul {
   background: -webkit-linear-gradient(top, white, #dddddd);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(1, white), color-stop(0, #dddddd));
   background: -ms-linear-gradient(top, white, #dddddd);
-  padding: 5px 1.5% 0px;
+  padding: 10px 1.5% 0px;
   border-radius: 12px;
   border: 1px solid #888888;
   border-left: 1px solid #999999;
@@ -185,3 +192,16 @@ ul {
 
 nav.inpage {
   margin: 0 0 15px 0; }
+
+@media all and (min-device-width : 320px) {
+  body {
+    font-size: 80%; }
+
+  .post .text {
+    font-size: 115%; } }
+@media all and (min-width : 320px) {
+  body {
+    font-size: 80%; }
+
+  .post .text {
+    font-size: 115%; } }

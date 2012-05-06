@@ -57,4 +57,5 @@ some functions are not supported, code reloading looks a bit hard at first but..
 - [getting started](http://www.rubymotion.com/developer-center/guides/getting-started/)
 - [motion-cocoapods](https://github.com/HipByte/motion-cocoapods)
 - [motion-cocoapods rdoc](http://rubydoc.info/gems/motion-cocoapods/1.0/frames)
+- [BubbleWrap](https://github.com/mattetti/BubbleWrap) A collection of wrappers and helpers for RubyMotion
 

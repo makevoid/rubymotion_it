@@ -13,6 +13,7 @@ gem "sass"
 gem "rdiscount"
 
 group :development do
+  gem "capistrano"
   gem "foreman"
   gem "rerun"
   gem "guard"

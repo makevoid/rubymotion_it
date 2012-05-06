@@ -1,8 +1,9 @@
 .posts
   - @posts.each_with_index do |post, idx|
     .post{ class: "#{idx == 0 ? "open" : "closed"}"  }
+      - link_to "●", "javascript:void(0)", class: "close"
       %h1
-        - link_to post.title, "/posts/#{post.title_url}"
+        - link_to post.title, "/posts/#{post.title_url}", class: "title"
       .contents
         .date= post.date
         .text
