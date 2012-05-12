@@ -8,6 +8,10 @@ require "#{path}/config/env.rb"
 
 class Rubymotion < Sinatra::Base
 
+  def not_found
+    halt 404, haml(:not_found)
+  end
+
   get "/" do
     @posts = Post.all
     haml :index
@@ -15,6 +19,7 @@ class Rubymotion < Sinatra::Base
 
   get "/posts/*" do |id|
     @post = Post.match id
+    not_found unless @post
     haml :post
   end
 
