@@ -12,7 +12,7 @@ if you want to read a file named "posts.json":
 easy as that!
 
 ---
-# Hello Button in MobileRuby
+# Hello Button in RubyMotion
 4 May 2012
 
 <script src="https://gist.github.com/2596291.js"> </script>
@@ -20,7 +20,7 @@ easy as that!
 <https://gist.github.com/2596291>
 
 ---
-# Adding an external framework to MobileRuby
+# Adding an external framework to RubyMotion
 4 May 2012
 
 open Rakefile

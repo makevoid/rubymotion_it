@@ -19,7 +19,7 @@ group :development do
   gem "guard"
   gem "guard-sass"
   gem "guard-coffeescript"
-  # gem "growl"
+  gem 'growl'
 end
 
 group :test do
